@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(rgb(72, 64, 64), rgba(200, 5, 5, 0.767),rgb(104, 90, 90),rgb(200,5,5));
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}

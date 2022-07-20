@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgb(26, 22, 22), rgb(116, 2, 2),rgb(43, 38, 38),rgb(200, 5, 5),
+    background: linear-gradient(rgb(26, 22, 22), rgb(116, 2, 2),rgb(43,38,38),rgb(143, 5, 5),rgb(43, 38, 38),rgb(200, 5, 5),
     rgb(72, 64, 64), rgb(116, 2, 2),rgb(43, 38, 38),rgb(143, 5, 5),rgb(49, 44, 44));
 }
 #inicio{
@@ -31,6 +31,46 @@ body{
     
 
 }
+.contenedor-grid{
+    display: grid;
+    
+}
+.contenedor-grid-h{
+    grid-row: 1;
+    grid-column: 1;
+    
+
+}
+#pHistoria{
+    font-size: 1.9em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contenedor-grid-aside{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transform: scale(0.95);/*ajuste de caja aside*/
+    
+}
+#tituloAside{
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2em;
+    border-radius: 5px;
+}
+#pAside{
+    color: white;
+    text-align: center;
+    font-size:1em;
+    line-height: 2.0;/*ajuste de entre lineas*/
+}
+.contenedor-grid-cap{
+    grid-row: 3;
+    grid-column: 1/3;
+}
+.contenedor-grid-com{
+    grid-row: 4;
+    grid-column: 1/3;
+}
 .contenido-capitulos-video{
     margin-top: 5px;
     width: 100%;
@@ -53,6 +93,7 @@ body{
     width:100%;
     height: 100vh;
 }
+
 .pie{
     display: flex;
     flex-direction: row;

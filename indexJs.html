@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigun-fan-page-comentario</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(rgb(26, 22, 22), rgb(116, 2, 2),rgb(43,38,38),rgb(143, 5, 5),rgb(43, 38, 38),rgb(200, 5, 5),
+        rgb(72, 64, 64), rgb(116, 2, 2),rgb(43, 38, 38),rgb(143, 5, 5),rgb(49, 44, 44));
+    }
+    #contenedor-opinion{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 85%;
+        /*height: 120vh;*/
+        background-color: rgb(74, 81, 81);
+        margin: 0 auto;
+        border-radius: 6px;
+        border: unset 7px silver;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+    .contenedor-mensaje{
+        margin: 0 auto;
+    }
+    button {
+        margin-top: 5px;
+        padding: 20px;
+        height: 30%;
+        cursor: grab;
+        background-color: rgb(10, 223, 223);
+        border-radius: 6px;
+        border: 4px silver;
+        font-size: 1.2em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:rgba(228, 222, 222, 0.842);
+        box-shadow: inset 5px 5px 10px 10px rgba(46, 42, 42, 0.419);
+    }
+    i{
+        font-family: 'Courier New', Courier, monospace;
+        font-size:small;
+    }
+    button:hover{
+        transform: scale(1.05);
+        font-size: 1.3em;
+    }
+    #btnNoMegusta{
+        background-color: rgb(179, 197, 15);
+    }
+    #btnMeEncanta{
+        background-color: rgb(174, 26, 26);
+    }
+    #parrafo{
+        margin-top: 0;
+        padding-left: 10px;
+        color: rgb(212, 175, 175);
+        cursor:grab;
+        font-weight: bold;
+
+    }
+    .btnMostrar{
+        background-color: rgba(44, 216, 29, 0.651);
+    }
+    #textoComentario{
+        width:99%;
+        height: 120px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.2em;
+    }
+    .contenedor-comentario-usuario{
+        padding: 10px;
+    }
+    .contenedor-publicar{
+        margin-top: 5px;
+    }
+    a{
+        border-radius: 5px;
+        border: 5px unset grey;
+        text-decoration: none;
+        background-color: aquamarine;
+        font-size: 1.7em;
+        padding: 5px;
+        margin: 5px;
+
+    }
+    a:hover{
+        font-size: 1.9em;
+    }
+</style>    
+<body>
+    <div id="contenedor-opinion">
+        <div class="contenedor-mensaje">
+            <div class="contenedor-opinion">
+                <button id="btnMeGusta">Me gusta</button>
+                <button id="btnNoMegusta">No me gusta</button>
+                <button id="btnMeEncanta">Me encanta</button>
+                <div id="parrafo"><h2 class="parrafo">Tu valoracion es importante!</h2></div>
+            </div>
+            <div class="contenedor-fomulario">
+                <form action="" method="get" name="form-comentario">
+                    <p>E-mail</p><input name="form-comentario" type="email">
+                    <p>Comentario</p>
+                    <textarea name="form-comentario-texto"
+                        id="textoComentario" type="text"
+                        class="form-control textarea"
+                        placeholder= "tu comentario es importante"
+                        maxlength="250">
+                    </textarea>
+                    <i>(si quieres ver tu comentario deberas Publicar antes de Enviar)</i>
+                    <button name="form-comentario-enviar" type="submit" id="botonMensaje">Enviar</button>
+                    <button name="form-comentario-editar" type="reset">Editar</button>
+                </form>
+            </div>
+            <div class="contenedor-publicar">    
+                <button type="submit" class="btnMostrar mostrar">Publicar</button>
+                <button class="convert">Gracias por llegar hasta aqui!</button>
+                <a href="index.html" target="_black">Inicio</a>
+                <div class="contenedor-comentario-usuario">
+                    <i>comentarios(...)</i>
+                    <ul>
+                        <li><p>Genial, me encanta el anime...para cuando los otros capitulos..? gracias..(177)</p></li>
+                        <li><p>ououh! vash estampida es el mejor..el mundo esta hecho de amor y paz!!!(178)</p></li>
+                        <li><p class="modificar"></p></li>
+                    </ul>   
+                    <h1 id="mensaje"></h1>
+                    
+                    
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="comentario.js"></script>
+</body>
+</html>

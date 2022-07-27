@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigun-fan-page-comentario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <style>
     body{
@@ -17,7 +19,7 @@
         padding: 10px;
         width: 85%;
         /*height: 120vh;*/
-        background-color: grey;
+        background-color: rgb(173, 27, 64);
         margin: 0 auto;
         border-radius: 6px;
         border: unset 7px silver;
@@ -38,11 +40,12 @@
         font-size: 1.2em;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color:rgb(17, 16, 16);
-        box-shadow: inset 5px 5px 10px 10px rgba(46, 42, 42, 0.419);
+        box-shadow: inset 5px 5px 10px 10px rgba(134, 130, 130, 0.489);
     }
     i{
         font-family: 'Courier New', Courier, monospace;
         font-size:small;
+        font-weight: bolder;
     }
     button:hover{
         transform: scale(1.05);
@@ -59,6 +62,7 @@
         padding-left: 10px;
         color: rgb(8, 8, 8);
         cursor:grab;
+        font-size: 1.3em;
         font-weight: bold;
 
     }
@@ -77,19 +81,7 @@
     .contenedor-publicar{
         margin-top: 5px;
     }
-    a{
-        border-radius: 5px;
-        border: 5px unset grey;
-        text-decoration: none;
-        background-color: aquamarine;
-        font-size: 1.7em;
-        padding: 5px;
-        margin: 5px;
-
-    }
-    a:hover{
-        font-size: 1.9em;
-    }
+    
 </style>    
 <body>
     <div id="contenedor-opinion">
@@ -118,7 +110,7 @@
             <div class="contenedor-publicar">    
                 <button type="submit" class="btnMostrar mostrar">Publicar</button>
                 <button class="convert">Gracias por llegar hasta aqui!</button>
-                <a href="index.html" target="_black">Inicio</a>
+                
                 <div class="contenedor-comentario-usuario">
                     <i>comentarios(...)</i>
                     <ul>
@@ -126,14 +118,25 @@
                         <li><p>ououh! vash estampida es el mejor..el mundo esta hecho de amor y paz!!!(178)</p></li>
                         <li><p class="modificar"></p></li>
                     </ul>   
-                    <h1 id="mensaje"></h1>
-                    
-                    
+                    <h1 id="mensaje"></h1>  
                 </div>    
             </div>
         </div>
     </div>
+    <footer class="pie text-bg-dark p-2">
+        <div class="contenedor-btnFinal">
+            <a id="btn-final"href="https://github.com/BenRomeroArg/fanPage" target="_black" class="active text-bg-danger p-2">GitHub<a>
+            <a id= "btn-final" href="indexComentario.html" target="_blank" class="active text-bg-warning p-2" target="_black">Contacto</a> 
+            <button id="btn-final"class="convert p-2">Gracias!</button>
+            <a id="btn-final"href="index.html" target="_black" class="active text-bg-info p-2">Volver</a>
+        </div>
+        <p>Esta pagina web esta en desarrollo por <a id="enlaceFinal" class="link"href="https://benromeroarg.github.io/miBlog" target="_black">Ben</a> 2022. Actualizado en el mes julio del 2022. 
+            El diseño de la pagina web y codigos se encuentra de forma publica en <a href="https://github.com/BenRomeroArg/fanPage" target="_blank">GitHub</a>.
+            Contenidos extraidos de <a href="https://www.youtube.com/">YouTube</a> y <a href="https://es.wikipedia.org/wiki/Wikipedia">Wikipedia</a>.
+        </p>
+    </footer>
     <script src="app.js"></script>
     <script src="comentario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
